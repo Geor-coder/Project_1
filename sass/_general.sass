@@ -1,0 +1,721 @@
+body
+	width: 100%
+	margin: 0
+	padding: 0
+img
+	display: block
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+section
+	padding: 58px 0 51px 0
+	&:nth-child(10)
+		padding: 0
+.header
+	padding: 23px 0 82px 0
+	background: url(/img/bg.jpg) center center / cover no-repeat
+	min-height: 680px
+	width: 100%
+// Гамбургер
+header .wrapper 
+  display: none
+  width: 100%
+  padding: 0
+  margin: 0
+
+#nav 
+  display: block
+  position: fixed
+  visibility: hidden
+  top: 0
+  right: 0%
+  width: 33%
+  height: 100%
+  z-index: 1
+  margin: 0
+  padding: 80px 0
+  list-style: none
+  background-color: rgba(0, 0, 0, 0.7)
+  transition-duration: .1s
+
+#nav.open
+  visibility: visible
+  -webkit-transition: linear 1s
+  transition: linear 1s
+
+#nav li 
+  float: none
+  text-align: right
+  text-decoration: none
+  width: 100%
+  margin: 0
+  -webkit-transition: linear 1s
+  transition: linear 1s
+
+#nav li a 
+  display: block
+  padding: 12px 24px
+  color: #ffffff
+  font-size: 20px
+  font-weight: 600
+  text-decoration: none 
+
+#contain
+  right: 22px
+  top: 35px
+  display: inline-block
+  cursor: pointer
+  position: absolute
+  z-index: 2
+
+.bar1, .bar2, .bar3 
+  width: 29px
+  height: 3px
+  background-color: #ffffff
+  margin: 6px 0
+  transition: 0.2s
+  border-radius: 100px
+
+.change .bar1 
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) 
+    transform: rotate(-45deg) translate(-5px, 5px) 
+
+.change .bar2
+	opacity: 0
+
+.change .bar3 
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) 
+    transform: rotate(45deg) translate(-8px, -8px) 
+// Гамбургер
+.logo
+	display: block
+	width: 95px
+	height: 99px
+.nav
+	display: flex
+	justify-content: center
+	align-items: center
+	padding-bottom: 10px 
+	width: 100%
+	height: 132px
+.menu
+	display: flex
+	width: 600px
+	justify-content: space-between
+	padding: 37px 52px
+	margin: 0
+	list-style-type: none
+	&_item
+		border-right: 1px dotted #898b92
+		padding-right: 8px
+		&:last-child
+			padding-right: 0
+			border-right: none
+		a	
+			text-decoration: none
+			font-family: Roboto
+			font-size: 14px
+			font-weight: 300
+			color: #ffffff
+			&:visited
+				color: #ffffff
+			&:active
+				border-bottom: 1px solid $main-color
+				color: $main-color
+			&:hover
+				border-bottom: 1px solid $main-color
+				color: $main-color
+.btn
+	padding: 0
+.phone
+	padding-right: 19px
+	a
+		font-family: Roboto
+		font-size: 18px
+		font-weight: bold
+		text-align: right
+		color: #ffffff
+		margin-top: 5px
+		text-decoration: none
+		&:hover
+			color: $main-color
+		&:visited
+			color: $main-color
+.questions
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 200
+	text-align: right
+	color: #ffffff
+.button
+	padding: 0
+	width: 160px
+	height: 45px
+	background-color: $main-color
+	font-family: Roboto
+	font-size: 12px
+	font-weight: bold
+	text-align: center
+	color: #ffffff
+	text-transform: uppercase
+	border-radius: 34px
+	border-style: none
+	margin-right: auto
+	&:hover
+		border: 2px solid $main-color
+		background-color: transparent
+		color: $main-color
+.second_button
+	display: block
+	margin: 39px auto 0 auto
+	padding: 0
+	width: 230px
+	height: 57px
+	font-family: Roboto
+	font-size: 15px
+	font-weight: bold
+	text-align: center
+	background-color: $main-color
+	text-transform: uppercase
+	color: #ffffff
+	border-style: none
+	border-radius: 34px
+	&:hover
+		border: 2px solid $main-color
+		background-color: transparent
+		color: $main-color
+.cta
+	text-align: center
+	display: block
+	margin-top: 10px
+	.subtitle
+		font-family: Roboto
+		font-size: 24px
+		font-weight: 300
+		color: #ffffff
+.main_title
+	line-height: 0.7
+	font-family: Roboto
+	font-size: 71px
+	font-weight: bold
+	font-stretch: condensed
+	color: $main-color
+	margin-bottom: 0
+	margin-top: 26px
+.second_title
+	font-family: Roboto
+	font-size: 42px
+	font-weight: 300
+	font-stretch: condensed
+	color: #ffffff
+	margin-bottom: 0
+	margin-top: 9px
+.line
+	padding-top: 38px
+	margin: 0 auto
+.row
+	margin-top: 33px
+.skills_block
+	display: flex
+	flex-direction: column
+	margin: 0 auto
+	justify-content: center
+	align-items: center
+	height: 135px
+	position: relative
+	width: 248px
+	text-align: center
+.skill_text
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+	line-height: 1.38
+	color: #ffffff
+	padding-top: 16px
+.second_screen
+	min-height: 590px
+	background-color: #f3f3f3
+.advantage_block
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 31px
+h2
+	font-family: Roboto
+	font-size: 26px
+	font-weight: bold
+	text-transform: uppercase
+	color: #2e2e2e
+	text-align: center
+	margin-bottom: 0
+.advantage_logo
+	display: flex
+	justify-content: center
+	align-items: center
+	max-width: 64px
+	max-height: 65px
+	margin-right: 17px
+.advantage_descr
+	width: 447px
+.advantage_subtitle
+	font-size: 16px
+	font-weight: bold
+	color: $main-color
+	line-height: 1.57
+.advantage_text
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+	line-height: 1.57
+	text-align: left
+	color: #3a3a3a
+.orange_line
+	width: 148px
+	height: 1px
+	background-color: $main-color
+	margin: 20px auto 0 auto
+.third_subtitle
+	margin: 17px auto 0 auto
+	font-family: Roboto
+	font-size: 21px
+	font-weight: 300
+	text-align: center
+	color: #2e2e2e
+.photos
+	margin-top: 37px
+	display: flex
+	justify-content: center
+	align-items: flex-start
+.photo
+	img
+		width: 350px
+		height: 210px
+	.subtitle
+		margin-top: 28px
+		font-size: 18px
+		font-weight: bold
+		text-align: center
+		color: $main-color
+	.descr
+		margin-top: 5px
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 300
+		text-align: center
+		color: #3a3a3a
+.four_screen
+	background: url(/img/third_bg.jpg) center center / cover no-repeat
+	width: 100%
+	min-height: 342px
+.china
+	margin: 0 auto
+.text_four
+	margin: 0 auto
+	text-align: center
+	width: 984px
+	color: #ffffff
+	h3
+		margin-top: 20px
+		font-family: Roboto
+		font-size: 26px
+		font-weight: bold
+	.descr_four
+		margin-top: 20px
+		font-family: Roboto
+		font-size: 19px
+		font-weight: 300
+.price_block
+	margin-top: 34px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.price_card, .questions_card
+	border: solid 1px #e9e9e9
+	width: 265px
+	min-height: 335px
+	margin: 0 auto
+	text-align: center
+.card_header
+	height: 61px
+	background-color: #25333c
+.card_title, .questions_title
+	padding-top: 20px
+	font-family: Roboto
+	font-size: 16px
+	text-transform: uppercase
+	font-weight: bold
+	text-align: center
+	color: #ffffff
+.card_icon
+	display: block
+	margin: 0 auto
+	margin-top: 14px
+.card_text
+	display: block
+	width: 182px
+	font-family: Roboto
+	font-size: 14px
+	font-weight: normal
+	color: #2e2e2e
+	margin: 12px auto 0 auto
+	span
+		font-size: 27px
+		color: $main-color
+		line-height: 1
+.card_descr
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+	color: #2e2e2e
+	margin-top: 19px
+.card_btn, .questions_btn
+	padding: 0
+	width: 160px
+	height: 45px
+	background-color: $main-color
+	font-family: Roboto
+	font-size: 12px
+	font-weight: bold
+	text-align: center
+	color: #ffffff
+	text-transform: uppercase
+	border-radius: 34px
+	border-style: none
+	margin: 25px auto 25px auto
+	&:hover
+		border: 2px solid $main-color
+		background-color: transparent
+		color: $main-color
+.modal_title
+	margin-top: 56px
+	font-family: Roboto
+	font-size: 28px
+	font-weight: normal
+	text-align: center
+	color: #3a3a3a
+.form
+	display: block
+	border: solid 1px rgba(0, 0, 0, 0.21)
+	text-align: center
+	margin-top: 71px
+	position: relative
+.consultation_logo
+	border: 6px solid #fff
+	position: absolute
+	bottom: 116px
+	left: 50%
+	transform: translateX(-50%)
+	display: block
+	margin: 0 auto
+	width: 105px
+	height: 105px
+.consultation_form
+	width: 816px
+	align-items: center
+	justify-content: space-around
+	display: flex
+	margin: 68px auto 53px auto
+	input
+		padding: 0 20px
+		width: 268px
+		height: 45px
+		border: solid 1px rgba(0, 0, 0, 0.21)
+		background-color: #ffffff
+		font-family: Roboto
+		font-size: 13px
+		font-weight: 300
+		border-radius: 30px
+		text-align: left
+		color: rgba(16, 16, 16, 0.7)
+.consultation_btn
+	position: absolute
+	padding: 0
+	top: 143px
+	left: 50%
+	transform: translateX(-50%)
+	width: 180px
+	height: 45px
+	background-color: $main-color
+	text-transform: uppercase
+	border-radius: 34px
+	border-style: none
+	outline: 5px solid white
+	font-family: Roboto
+	font-size: 12px
+	font-weight: normal
+	text-align: center
+	color: #ffffff
+	&:hover
+		border: 2px solid $main-color
+		background-color: #ffffff
+		color: $main-color
+.six_screen
+	background: url(/img/four_bg.jpg) center center / cover no-repeat
+	min-height: 342px
+	width: 100%
+.six_icon
+	display: block
+	margin: 0 auto
+.text_six
+	margin: 0 auto
+	text-align: center
+	width: 984px
+	color: #ffffff
+	h3
+		margin-top: 20px
+		font-family: Roboto
+		font-size: 26px
+		font-weight: bold
+	.descr_six
+		margin-top: 20px
+		font-family: Roboto
+		font-size: 19px
+		font-weight: 300
+.seven_screen
+	min-height: 454px
+	background-color: #f3f3f3
+.work_block
+	margin-top: 23px
+.work_logo
+	img
+		margin: 0 auto
+.work_descr
+	text-align: center
+.work_subtitle
+	font-size: 16px
+	font-weight: bold
+	color: $main-color
+.work_text
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+	line-height: 1.57
+	color: #3a3a3a
+.row
+	&:nth-child(2)
+		justify-content: center
+		margin-top: 10px
+// Карусель
+.owl-prev, .owl-next
+	position: absolute
+	border: none
+	left: 195px
+	top: 17%
+	transform: translateY(-50%)
+	background-color: transparent
+.owl-next
+	left: 440px
+	right: auto
+
+.subtitle
+	font-size: 18px
+	font-weight: bold
+
+.testimonials
+	padding: 0
+
+#testimonials-list .shadow-effect p
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+	color: #3a3a3a
+
+#testimonials-list
+  .item
+    text-align: center
+    opacity: 0.2
+    -webkit-transform: scale3d(0.8, 0.8, 1)
+    transform: scale3d(0.8, 0.8, 1)
+    transition: all 0.3s ease-in-out
+
+  .owl-item.active.center .item
+    opacity: 1
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+.owl-carousel .owl-item img
+  -webkit-transform-style: preserve-3d
+  transform-style: preserve-3d
+  width: 114px
+  height: 114px
+  border-radius: 50%
+  margin: 0 auto 17px
+#testimonials-list.owl-carousel .owl-dots
+  .owl-dot
+    &.active span, &:hover span
+      background: #393939
+      -webkit-transform: translate3d(0px, -50%, 0px) scale(0.7)
+      transform: translate3d(0px, -50%, 0px) scale(0.7)
+
+    display: inline-block
+
+    span
+      background: #393939
+      display: inline-block
+      height: 20px
+      margin: 0 2px 5px
+      -webkit-transform: translate3d(0px, -50%, 0px) scale(0.3)
+      transform: translate3d(0px, -50%, 0px) scale(0.3)
+      -webkit-transform-origin: 50% 50% 0
+      transform-origin: 50% 50% 0
+      transition: all 250ms ease-out 0s
+      width: 20px
+
+  display: inline-block
+  width: 100%
+  text-align: center
+.owl-dots
+	padding-top: 20px
+.owl-nav
+	position: absolute
+	left: 230px
+	top: 17%
+// Карусель
+.nine_screen
+	background: url(/img/five_bg.jpg) center center / cover no-repeat
+	min-height: 438px
+	width: 100%
+.questions_card
+	width: 896px
+	height: 297px
+	border: none
+.questions_header
+	padding: 20px 0
+	min-height: 68px
+	background-color: #25333c
+.questions_title
+	line-height: 0.5
+	padding: 0
+	margin: 0 0 5px
+	font-size: 19px
+	font-weight: bold
+	text-align: center
+	color: #ffffff
+.questions_subtitle
+	line-height: 1
+	padding: 0
+	text-transform: uppercase
+	font-family: Roboto
+	font-size: 14px
+	font-weight: 300
+	text-align: center
+	color: #ffffff
+.questions_body
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	background-color: rgba(255, 255, 255, 0.5)
+.questions_form
+	display: block
+	width: 813px
+	height: 124px
+	margin-top: 18px
+	input
+		border-radius: 34px
+		font-family: Roboto
+		font-size: 13px
+		font-weight: 300
+		text-align: left
+		color: rgba(16, 16, 16, 0.7)
+		width: 268px
+		height: 45px
+		padding: 18px 100px 18px 27px
+		border: solid 1px rgba(0, 0, 0, 0.21)
+		background-color: #ffffff
+		&:nth-child(4)
+			width: 813px
+			height: 71px
+			margin-top: 8px
+			padding: 18px 705px 41px 25px
+			border-radius: 8px
+			border: solid 1px rgba(0, 0, 0, 0.21)
+			background-color: #ffffff
+.questions_btn
+	margin-top: 17px
+	width: 180px
+	height: 45px
+	font-family: Roboto
+	font-size: 12px
+	font-weight: normal
+	text-align: center
+	color: #ffffff
+.map
+	iframe
+		width: 100%
+		height: 464px
+		border: none
+footer
+	width: 100%
+	min-height: 201px
+	padding: 24px 0 0 0
+	background-color: #25333c
+.footer_up, .footer_down
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	height: 71px
+.footer_logo
+	display: block
+	width: 67px
+  	height: 71px
+.footer_text
+	margin: 0 280px 0 44px
+	font-family: Roboto
+	font-size: 15px
+	font-weight: bold
+	text-align: left
+	color: #ffffff
+.footer_line
+	width: 100%
+	height: 1px
+	margin-top: 26px
+	background-color: rgba(255, 255, 255, 0.3)
+.footer_down
+	margin-top: 20px
+	height: 32px
+.first_link
+	font-family: Roboto
+	font-size: 13px
+	font-weight: 300
+	text-align: center
+	color: rgba(255, 255, 255, 0.6)
+	&:hover
+		text-decoration: none
+.second_link
+	font-family: Roboto
+	font-size: 13px
+	font-weight: 300
+	text-align: center
+	color: $main-color
+	&:hover
+		text-decoration: none
+		border-bottom: 1px solid $main-color
+		color: $main-color
+.company
+	align-items: center
+	justify-content: center
+	display: flex
+.text_company
+	padding-right: 10px
+	font-family: Roboto
+	font-size: 13px
+	font-weight: 300
+	text-align: right
+	color: rgba(255, 255, 255, 0.6)
+.logo_company
+	width: 30px
+	height: 32px
+// Кнопка вверх
+#toTop
+	display: none
+	height: 40px
+	width: 40px
+	right: 37px
+	bottom: 37px
+	position: fixed
+	cursor: pointer
+	img
+		width: 140%
+// Кнопка вверх
